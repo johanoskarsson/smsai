@@ -1,0 +1,16 @@
+runtime: java17
+
+env_variables:
+  TWILIO_ACCOUNT_SID: "your_twilio_account_sid"
+  TWILIO_AUTH_TOKEN: "your_twilio_auth_token"
+  TWILIO_PHONE_NUMBER: "your_twilio_phone_number"
+  CLAUDE_API_KEY: "your_claude_api_key"
+
+automatic_scaling:
+  min_instances: 1
+  max_instances: 10
+  target_cpu_utilization: 0.6
+
+resources:
+  cpu: 1
+  memory_gb: 2

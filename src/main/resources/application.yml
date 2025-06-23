@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+twilio:
+  account-sid: ${TWILIO_ACCOUNT_SID}
+  auth-token: ${TWILIO_AUTH_TOKEN}
+  phone-number: ${TWILIO_PHONE_NUMBER}
+
+claude:
+  api-key: ${CLAUDE_API_KEY}
+  base-url: https://api.anthropic.com
+  model: claude-3-5-sonnet-20241022
+
+logging:
+  level:
+    com.smsai: INFO
+    org.springframework.web: DEBUG
